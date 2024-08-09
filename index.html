@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHONGVUU - Trang web bán laptop</title>
+    <link rel="icon" href="title_logo_phongvu.png">
+    <link rel="stylesheet" href="./css/dinhdang.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="./js/program.js"></script>
+
+
+</head>
+
+<body>
+	<div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="index.html" class="logo">
+                    <img src="phongvu.png" title="PHONGVUU - Trang web mua laptop" />
+                </a>
+            </div>
+            <div class="dangkydangnhap">
+                <a href=""><i class="fa-solid fa-user-lock"></i> ĐĂNG KÝ </a>
+                <a href=""> <i class="fa-solid fa-circle-user"></i> ĐĂNG NHẬP</a>
+				<a href="giohang.html">  <i class="fa-solid fa-cart-arrow-down"></i>GIỎ HÀNG</a>
+            </div>
+        </div>
+       
+        <div id="menu">
+            <ul class="root">
+                <li>
+                    <a href=""><i class="fa fa-bars"></i> DANH MỤC SP</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="">LAPTOP</a>
+                            <ul class="submenu">
+                                <li><a href="laptop_acer.html" title="LAPTOP ACER">ACER</a></li>
+                                <li><a href="laptop_asus.html" title="LAPTOP ASUS">ASUS</a></li>
+                                <li><a href="laptop_MSI.html">MSI</a></li>
+                                <li><a href="laptop_DELL.html">DELL</a></li>
+                                <li><a href="laptop_Lenovo.html">LENOVO</a></li>
+                            </ul>
+                        </li>            
+                    </ul>
+                </li>
+                <li><a href="index.html"><i class="fa fa-home"></i> TRANG CHỦ</a></li>
+                <li><a href="chinhsachbaohanh.html"><i class="fa-solid fa-screwdriver-wrench"></i> CHÍNH SÁCH BẢO HÀNH</a></li>
+                <li><a href="phuongthucthanhtoan.html"><i class="fa-solid fa-hand-holding-dollar"></i> PHƯƠNG THỨC THANH TOÁN</a></li>
+                <li><a href="vechungtoi.html"><i class="fa fa-cloud"></i> VỀ CHÚNG TÔI</a></li>
+                <li class="call notmenu"><i class="fa-solid fa-phone"></i> HOTLINE: <span>1800 6865</span></li>
+            </ul>           
+        </div>
+
+        <div id="slide">            
+            <img id="hinh" src="./image/banner0.png" alt="">
+            <div class="dieuhuong">
+                <i class="fa fa-angle-left" onclick="prev()"></i>
+                <i class="fa fa-angle-right" onclick="next()"></i>
+            </div>
+            <div class="slide-dots">
+                <i class="fa-solid fa-circle" id="dots0" onclick="dots0()"></i>
+                <i class="fa-solid fa-circle" id="dots1" onclick="dots1()"></i>
+                <i class="fa-solid fa-circle" id="dots2" onclick="dots2()"></i>
+                </span> 
+            </div>
+        </div>
+
+        <div class="title_noidung">                
+            <a href="">LAP TOP ASUS</a>
+        </div>
+
+        <div class="khungsanpham_home">
+            <div class="sanpham">
+                <a href="" title="Laptop ASUS Vivobook S433EA-AM439T 90NB0RL4-M06720">
+                    <img class="hinh" src="./image/asus/asus_hinh1.png" alt="">
+                    <p id="tensp">
+                        Laptop ASUS Vivobook S433EA-AM439T 90NB0RL4-M06720 ( 14" Full HD/Intel Core i5-1135G7/8GB/512GB SSD/Windows 10 Home SL 64-bit/1.4kg)
+                    </p>
+                    
+                    <p>
+                        <span id="gia">17.490.000 đ</span>
+                        <img id="free-ship" src="./image/free-ship.png">
+                    </p>
+
+                    <p>
+                        <span id="giamgia">18.490.000 đ</span>
+                        <span id="giamgia-phantram">-5.41%</span>
+                    </p>
+                </a>                
+            </div>
+
+            <div class="sanpham">
+                <a href="" title="Laptop ASUS Vivobook Flip TP470EA-EC027T 90NB0S02-M00320">
+                    <img class="hinh" src="./image/asus/asus_hinh2.png" alt="">
+                    <p id="tensp">
+                        Laptop ASUS Vivobook Flip TP470EA-EC027T 90NB0S02-M00320 ( 14" Full HD/Intel Core i3-1115G4/4GB/512GB SSD/Windows 10 Home 64-bit/1.5kg)                </p>
+                    <p>
+                        <span id="gia">14.490.000 đ</span>
+                        <img id="free-ship" src="./image/free-ship.png">
+                    </p>
+
+                    <p>
+                        <span id="giamgia">16.990.000 đ</span>
+                        <span id="giamgia-phantram">-14.71%</span>
+                    </p>
+                </a>                
+            </div>
+
+            <div class="sanpham">
+                <a href="" title="Laptop ASUS X515EA-BQ1006T 90NB0TY2-M16620">
+                    <img class="hinh" src="./image/asus/asus_hinh3.png" alt="">
+                    <p id="tensp">
+                        Laptop ASUS X515EA-BQ1006T 90NB0TY2-M16620 ( 15.6" Full HD/Intel Core i3-1115G4/4GB/512GB SSD/Windows 10 Home 64-bit/1.8kg)                <p>
+                        <span id="gia">13.390.000 đ</span>
+                        <img id="free-ship" src="./image/free-ship.png">
+                    </p>
+
+                    <p>
+                        <span id="giamgia">14.490.000 đ</span>
+                        <span id="giamgia-phantram">-7.59%</span>
+                    </p>
+                </a>                
+            </div>
+
+            <div class="sanpham">
+                <a href="" title="Laptop ASUS Vivobook S533EA-BN293T">
+                    <img class="hinh" src="./image/asus/asus_hinh1.png" alt="">
+                    <p id="tensp">
+                        Laptop ASUS Vivobook S533EA-BN293T ( 15.6" Full HD/Intel Core i5-1135G7/8GB/512GB SSD/Windows 10 Home SL 64-bit/1.6kg)                </p>
+                    <p>
+                        <span id="gia">17.490.000 đ</span>
+                        <img id="free-ship" src="./image/free-ship.png">
+                    </p>
+
+                    <p>
+                        <span id="giamgia">18.490.000 đ</span>
+                        <span id="giamgia-phantram">-5.41%</span>
+                    </p>
+                </a>                
+            </div>
+
+            <div class="sanpham">
+                <a href="" title="Laptop ASUS Vivobook S533EA-BN294T">
+                    <img class="hinh" src="./image/asus/asus_hinh1.png" alt="">
+                    <p id="tensp">
+                        Laptop ASUS Vivobook S533EA-BN294T ( 15.6" Full HD/Intel Core i5-1135G7/8GB/512GB SSD/Windows 10 Home SL 64-bit/1.6kg)                </p>
+                    <p>
+                        <span id="gia">18.990.000 đ</span>
+                        <img id="free-ship" src="./image/free-ship.png">
+                    </p>
+
+                    <p>
+                        <span id="giamgia">20.990.000 đ</span>
+                        <span id="giamgia-phantram">-9.53%</span>
+                    </p>
+                </a>                
+            </div>
+
+            <div class="xemthem">
+                <li><a href="">Xem thêm</a></li>
+            </div>
+        </div>
+
+        <div class="title_noidung">                
+            <a href="">LAP TOP ACER</a>
+        </div>
+
+        <div class="khungsanpham_home">
+            <div class="sanpham">
+                <a href="" title="Laptop Acer Spin 5 SP513-52N-556V (NX.GR7SV.004)">
+                    <img class="hinh" src="./image/acer/acer_hinh1.png" alt="">
+                    <p id="tensp">
+                        Laptop Acer Spin 5 SP513-52N-556V (NX.GR7SV.004) (13.3" FHD/i5-8250U/8GB/UHD 620/Win10/1.5 kg)
+                    </p>
+                    
+                    <p>
+                        <span id="gia">20.424.000 ₫</span>
+                        <img id="free-ship" src="./image/free-ship.png">
+                    </p>
+
+                    <p>
+                        <span id="giamgia">21.499.000 đ</span>
+                        <span id="giamgia-phantram">-5.00%</span>
+                    </p>
+                </a>                
+            </div>
+
+            <div class="sanpham">
+                <a href="" title="Laptop Acer Nitro 5 AN515-52-51LW (NH.Q3LSV.002)">
+                    <img class="hinh" src="./image/acer/acer_hinh2.png" alt="">
+                    <p id="tensp">
+                        Laptop Acer Nitro 5 AN515-52-51LW (NH.Q3LSV.002) (15.6" FHD/i5-8300H/8GB/1TB HDD/GTX 1050Ti/Linux/2.4 kg)                </p>
+                    <p>
+                        <span id="gia">20.504.000 ₫</span>
+                        <img id="free-ship" src="./image/free-ship.png">
+                    </p>
+
+                    <p>
+                        <span id="giamgia">24.040.000 đ</span>
+                        <span id="giamgia-phantram">-14.71%</span>
+                    </p>
+                </a>                
+            </div>
+
+            <div class="sanpham">
+                <a href="" title="Laptop ACER Nitro 5 AN515-57-77KU NH.QDGSV.001">
+                    <img class="hinh" src="./image/acer/acer_hinh3.png" alt="">
+                    <p id="tensp">
+                        Laptop ACER Nitro 5 AN515-57-77KU NH.QDGSV.001 ( 15.6" Quad HD (2K)/ 165Hz/Intel Core i7-11800H/16GB/512GB SSD/NVIDIA GeForce RTX 3060/Windows 10 Home 64-bit/2.2kg)                <p>
+                        <span id="gia">37.490.000 đ</span>
+                        <img id="free-ship" src="./image/free-ship.png">
+                    </p>
+
+                    <p>
+                        <span id="giamgia">38.990.000 ₫</span>
+                        <span id="giamgia-phantram">-3.85%</span>
+                    </p>
+                </a>                
+            </div>
+
+            <div class="sanpham">
+                <a href="" title="Laptop ACER Aspire 3 A315-56-502X (NX.HS5SV.00F)">
+                    <img class="hinh" src="./image/acer/acer_hinh4.png" alt="">
+                    <p id="tensp">
+                        Laptop ACER Aspire 3 A315-56-502X (NX.HS5SV.00F) ( 15.6" Full HD/Intel Core i5-1035G1/4GB/256GB SSD/Windows 10 Home 64-bit/1.7kg)                </p>
+                    <p>
+                        <span id="gia">13.390.000 đ</span>
+                        <img id="free-ship" src="./image/free-ship.png">
+                    </p>
+
+                    <p>
+                        <span id="giamgia">14.490.000 đ</span>
+                        <span id="giamgia-phantram">-7.59%</span>
+                    </p>
+                </a>                
+            </div>
+
+            <div class="sanpham">
+                <a href="" title="Laptop ACER Aspire 3 A315-58G-50S4 NX.ADUSV.001">
+                    <img class="hinh" src="./image/acer/acer_hinh5.png" alt="">
+                    <p id="tensp">
+                        Laptop ACER Aspire 3 A315-58G-50S4 NX.ADUSV.001 ( 15.6" Full HD/Intel Core i5-1135G7/8GB/512GB SSD/NVIDIA GeForce MX350/Windows 10 Home 64-bit/1.7kg)                </p>
+                    <p>
+                        <span id="gia">18.490.000 đ</span>
+                        <img id="free-ship" src="./image/free-ship.png">
+                    </p>
+
+                    <p>
+                        <span id="giamgia">18.990.000 đ</span>
+                        <span id="giamgia-phantram">-2.63%</span>
+                    </p>
+                </a>                
+            </div>
+
+            <div class="xemthem">
+                <li><a href="">Xem thêm</a></li>
+            </div>
+        </div>
+
+        <div class="title_noidung">                
+            <a href="">LAP TOP MSI</a>
+        </div>
+
+        <div class="khungsanpham_home">
+            <div class="sanpham">
+                <a href="" title="Laptop MSI Prestige 14 A11SCX 282VN">
+                    <img class="hinh" src="./image/MSI/MSI_hinh1.png" alt="">
+                    <p id="tensp">
+                        Laptop MSI Prestige 14 A11SCX 282VN ( 14" Full HD/Intel Core i7-1185G7/8GB/512GB SSD/NVIDIA GeForce GTX 1650/Windows 10 Home 64-bit/1.3kg)
+                    </p>
+                    
+                    <p>
+                        <span id="gia">30.390.000 ₫</span>
+                        <img id="free-ship" src="./image/free-ship.png">
+                    </p>
+
+                    <p>
+                        <span id="giamgia">32.990.000 đ</span>
+                        <span id="giamgia-phantram">-7.88%</span>
+                    </p>
+                </a>                
+            </div>
+
+            <div class="sanpham">
+                <a href="" title="Laptop MSI Thin GF65 10UE 286VN">
+                    <img class="hinh" src="./image/MSI/MSI_hinh2.png" alt="">
+                    <p id="tensp">
+                        Laptop MSI Thin GF65 10UE 286VN ( 15.6" Full HD/ 144Hz/Intel Core i5-10500H/16GB/512GB SSD/NVIDIA GeForce RTX 3060/Windows 10 Home SL 64-bit/1.8kg)                </p>
+                    <p>
+                        <span id="gia">27.590.000 ₫</span>
+                        <img id="free-ship" src="./image/free-ship.png">
+                    </p>
+
+                    <p>
+                        <span id="giamgia">29.490.000 đ</span>
+                        <span id="giamgia-phantram">-6.44%</span>
+                    </p>
+                </a>                
+            </div>
+
+            <div class="sanpham">
+                <a href="" title="Laptop MSI Modern 15 A10M 667VN">
+                    <img class="hinh" src="./image/MSI/MSI_hinh3.png" alt="">
+                    <p id="tensp">
+                        Laptop MSI Modern 15 A10M 667VN ( 15.6" Full HD/Intel Core i5-10210U/8GB/512GB SSD/Windows 10 Home 64-bit/1.6kg)                <p>
+                        <span id="gia">16.990.000 đ</span>
+                        <img id="free-ship" src="./image/free-ship.png">
+                    </p>
+
+                    <p>
+                        <span id="giamgia">18.490.000 ₫</span>
+                        <span id="giamgia-phantram">-8.11%</span>
+                    </p>
+                </a>                
+            </div>
+
+            <div class="sanpham">
+                <a href="" title="Laptop MSI Bravo 15 B5DD 264VN">
+                    <img class="hinh" src="./image/MSI/MSI_hinh4.png" alt="">
+                    <p id="tensp">
+                        Laptop MSI Bravo 15 B5DD 264VN ( 15.6" Full HD/ 144Hz/Ryzen 7 5800H/8GB/512GB SSD/AMD Radeon RX 5500M/Windows 11 Home/1.9kg)                </p>
+                    <p>
+                        <span id="gia">18.490.000 đ</span>
+                        <img id="free-ship" src="./image/free-ship.png">
+                    </p>
+
+                    <p>
+                        <span id="giamgia">20.990.000 đ</span>
+                        <span id="giamgia-phantram">-11.91%</span>
+                    </p>
+                </a>                
+            </div>
+
+            <div class="sanpham">
+                <a href="" title="Laptop MSI Prestige 14 A11SC 203VN">
+                    <img class="hinh" src="./image/MSI/MSI_hinh5.png" alt="">
+                    <p id="tensp">
+                        Laptop MSI Prestige 14 A11SC 203VN ( 14" Intel Core i7-1195G7/16GB/512GB SSD/NVIDIA GeForce GTX 1650/Windows 10 Home 64-bit/1.3kg)                </p>
+                    <p>
+                        <span id="gia">24.690.000 đ</span>
+                        <img id="free-ship" src="./image/free-ship.png">
+                    </p>
+
+                    <p>
+                        <span id="giamgia">28.990.000 đ</span>
+                        <span id="giamgia-phantram">-14.83%</span>
+                    </p>
+                </a>                
+            </div>
+
+            <div class="xemthem">
+                <li><a href="">Xem thêm</a></li>
+            </div>
+        </div>
+
+        <div class="title_noidung">                
+            <a href="">LAP TOP DELL</a>
+        </div>
+
+        <div class="khungsanpham_home">
+            <div class="sanpham">
+                <a href="" title="Laptop Dell Vostro 14 3405 V4R53500U001W">
+                    <img class="hinh" src="./image/DELL/dell_hinh1.png" alt="">
+                    <p id="tensp">
+                        Laptop Dell Vostro 14 3405 V4R53500U001W ( 14" Full HD/AMD Ryzen 5 3500U/4GB/256GB SSD/Windows 10 Home SL 64-bit/1.7kg)
+                    </p>
+                    
+                    <p>
+                        <span id="gia">15.290.000 ₫</span>
+                        <img id="free-ship" src="./image/free-ship.png">
+                    </p>
+
+                    <p>
+                        <span id="giamgia">16.490.000 đ</span>
+                        <span id="giamgia-phantram">-7.28%</span>
+                    </p>
+                </a>                
+            </div>
+
+            <div class="sanpham">
+                <a href="" title="Laptop Doanh Nghiệp Dell Latitude 3520 70251603">
+                    <img class="hinh" src="./image/DELL/dell_hinh2.png" alt="">
+                    <p id="tensp">
+                        Laptop Doanh Nghiệp Dell Latitude 3520 70251603 ( 15.6inch HD/Intel Core i3-1115G4/4GB/256GB SSD/Fedora/1.8kg)                </p>
+                    <p>
+                        <span id="gia">13.290.000 ₫</span>
+                        <img id="free-ship" src="./image/free-ship.png">
+                    </p>
+
+                    <p>
+                        <span id="giamgia">15.890.000 đ</span>
+                        <span id="giamgia-phantram">-16.36%</span>
+                    </p>
+                </a>                
+            </div>
+
+            <div class="sanpham">
+                <a href="" title="Laptop Doanh Nghiệp Dell Latitude 3420 L3420I5SSD">
+                    <img class="hinh" src="./image/DELL/dell_hinh3.png" alt="">
+                    <p id="tensp">
+                        Laptop Doanh Nghiệp Dell Latitude 3420 L3420I5SSD ( 14inch HD/Intel Core i5-1135G7/8GB/256GB SSD/Fedora/1.5kg)                <p>
+                        <span id="gia">18.490.000 đ</span>
+                        <img id="free-ship" src="./image/free-ship.png">
+                    </p>
+
+                    <p>
+                        <span id="giamgia">21.490.000 ₫</span>
+                        <span id="giamgia-phantram">-13.96%</span>
+                    </p>
+                </a>                
+            </div>
+
+            <div class="sanpham">
+                <a href="" title="Laptop Dell Gaming G15 5515 5515-P105F004CGR">
+                    <img class="hinh" src="./image/DELL/dell_hinh4.png" alt="">
+                    <p id="tensp">
+                        Laptop Dell Gaming G15 5515 5515-P105F004CGR ( 15.6" Full HD/ 120Hz/AMD Ryzen 5 5600H/8GB/256GB SSD/NVIDIA GeForce RTX 3050/Windows 11 Home SL + Office Home & Student 2021/2.8kg)                </p>
+                    <p>
+                        <span id="gia">23.990.000 đ</span>
+                        <img id="free-ship" src="./image/free-ship.png">
+                    </p>
+
+                    <p>
+                        <span id="giamgia">25.990.000 đ</span>
+                        <span id="giamgia-phantram">-7.7%</span>
+                    </p>
+                </a>                
+            </div>
+
+            <div class="sanpham">
+                <a href="" title="Laptop Dell Gaming G15 5511 5511-P105F006AGR">
+                    <img class="hinh" src="./image/DELL/dell_hinh5.png" alt="">
+                    <p id="tensp">
+                        Laptop Dell Gaming G15 5511 5511-P105F006AGR ( 15.6" 120Hz/Intel Core i7-11800H/8GB/512GB SSD/NVIDIA GeForce RTX 3050/Windows 11 Home SL + Office Home & Student 2021/2.8kg)                </p>
+                    <p>
+                        <span id="gia">31.490.000 đ</span>
+                        <img id="free-ship" src="./image/free-ship.png">
+                    </p>
+
+                    <p>
+                        <span id="giamgia">33.990.000 đ</span>
+                        <span id="giamgia-phantram">-7.36%</span>
+                    </p>
+                </a>                
+            </div>
+
+            <div class="xemthem">
+                <li><a href="">Xem thêm</a></li>
+            </div>
+        </div>
+
+        <div class="title_noidung">                
+            <a href="">LAP TOP LENOVO</a>
+        </div>
+
+        <div class="khungsanpham_home">
+            <div class="sanpham">
+                <a href="" title="Laptop Lenovo V330-14IKBR (81B0008LVN)">
+                    <img class="hinh" src="./image/Lenovo/lenovo_hinh1.png" alt="">
+                    <p id="tensp">
+                        Laptop Lenovo V330-14IKBR (81B0008LVN) (14" HD/i5-8250U/4GB/1TB HDD/UHD 620/Free DOS/1.5 kg)
+                    </p>
+                    
+                    <p>
+                        <span id="gia">13.190.000 ₫</span>
+                        <img id="free-ship" src="./image/free-ship.png">
+                    </p>
+
+                    <p>
+                        <span id="giamgia">13.490.000 đ</span>
+                        <span id="giamgia-phantram">-2.22%</span>
+                    </p>
+                </a>                
+            </div>
+
+            <div class="sanpham">
+                <a href="" title="Laptop Lenovo Ideapad 330-15IKBR (15IKBR 81DE010CVN)">
+                    <img class="hinh" src="./image/Lenovo/lenovo_hinh2.png" alt="">
+                    <p id="tensp">
+                        Laptop Lenovo Ideapad 330-15IKBR (15IKBR 81DE010CVN) (15.6" HD/i3-7020U/4GB/2TB HDD/Radeon 530/Win10/2.2 kg)                </p>
+                    <p>
+                        <span id="gia">11.090.000 ₫</span>
+                        <img id="free-ship" src="./image/free-ship.png">
+                    </p>
+
+                    <p>
+                        <span id="giamgia">11.990.000 đ</span>
+                        <span id="giamgia-phantram">-7.51%</span>
+                    </p>
+                </a>                
+            </div>
+
+            <div class="sanpham">
+                <a href="" title="Laptop Lenovo Yoga Slim 7 14ITL05- 82A3004FVN">
+                    <img class="hinh" src="./image/Lenovo/lenovo_hinh3.png" alt="">
+                    <p id="tensp">
+                        Laptop Lenovo Yoga Slim 7 14ITL05- 82A3004FVN ( 14 inch/Full HD/Intel EVO Core i7-1165G7/8GB/512GB SSD/Windows 10 Home SL 64-bit/1.4kg)                <p>
+                        <span id="gia">23.190.000 đ</span>
+                        <img id="free-ship" src="./image/free-ship.png">
+                    </p>
+
+                    <p>
+                        <span id="giamgia">27.990.000 ₫</span>
+                        <span id="giamgia-phantram">-17.15%</span>
+                    </p>
+                </a>                
+            </div>
+
+            <div class="sanpham">
+                <a href="" title="Laptop Lenovo Yoga Slim 7 14ITL05 82A300A6VN">
+                    <img class="hinh" src="./image/Lenovo/lenovo_hinh4.png" alt="">
+                    <p id="tensp">
+                        Laptop Lenovo Yoga Slim 7 14ITL05 82A300A6VN ( 14" Full HD/Intel Core i7-1165G7/8GB/512GB SSD/Windows 10 Home 64-bit/1.35kg)                </p>
+                    <p>
+                        <span id="gia">22.490.000 đ</span>
+                        <img id="free-ship" src="./image/free-ship.png">
+                    </p>
+
+                    <p>
+                        <span id="giamgia">27.990.000 đ</span>
+                        <span id="giamgia-phantram">-19.65%</span>
+                    </p>
+                </a>                
+            </div>
+
+            <div class="sanpham">
+                <a href="" title="Laptop Lenovo Legion 5 Pro 16ITH6H 82JD00BCVN">
+                    <img class="hinh" src="./image/Lenovo/lenovo_hinh5.png" alt="">
+                    <p id="tensp">
+                        Laptop Lenovo Legion 5 Pro 16ITH6H 82JD00BCVN ( 16" 165Hz/Intel Core i7-11800H/16GB/512GB SSD/NVIDIA GeForce RTX 3060/Windows 11 Home/2.3kg)                </p>
+                    <p>
+                        <span id="gia">39.490.000 đ</span>
+                        <img id="free-ship" src="./image/free-ship.png">
+                    </p>
+
+                    <p>
+                        <span id="giamgia">46.990.000 đ</span>
+                        <span id="giamgia-phantram">-15.96%</span>
+                    </p>
+                </a>                
+            </div>
+
+            <div class="xemthem">
+                <li><a href="">Xem thêm</a></li>
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <div class="trai">
+                <span style="font-size: 16px; font-weight: bold;">CÔNG TY CỔ PHẦN THƯƠNG MẠI - DỊCH VỤ PHONG VŨ</span>
+                <br>
+                <br>
+                © 1997 - 2020 Công Ty Cổ Phần Thương Mại - Dịch Vụ Phong Vũ
+                <br>
+                Giấy chứng nhận đăng ký doanh nghiệp: 0304998358 do Sở KH-ĐT TP.HCM cấp lần đầu ngày 30 tháng 05 năm 2007
+            </div>
+
+            <div class="phai">
+                <span>Địa chỉ trụ sở chính:</span><br>
+                Tầng 5, Số 117-119-121 Nguyễn Du, Phường Bến Thành, Quận 1, Thành Phố Hồ Chí Minh<br>
+                <span>Văn phòng điều hành miền Bắc:</span><br>
+                Tầng 6, Số 1 Phố Thái Hà, Phường Trung Liệt, Quận Đống Đa, Hà Nội<br>
+                <span>Văn phòng điều hành miền Nam:</span><br>
+                Tầng 11 Minh Long Tower, số 17 Bà Huyện Thanh Quan, Phường Võ Thị Sáu, Quận 3, TP. Hồ Chí Minh<br>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

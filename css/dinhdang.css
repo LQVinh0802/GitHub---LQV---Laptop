@@ -1,0 +1,309 @@
+*{
+    margin: 0px auto;
+    padding: 0px;
+}
+.container{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+.header{
+    grid-column: 1/11;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.header .logo{
+    grid-column: 1/2;
+}
+.header .dangkydangnhap{
+    grid-column: 7/11;
+    padding-top: 10px;    
+}
+.header .dangkydangnhap a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding-right: 10px;
+    
+}
+.header .dangkydangnhap a:hover{
+    color: blue;
+}
+
+#menu{
+    width: 100%;
+    height:50px;
+    margin: 0px auto;
+    background-color: cornflowerblue;
+    position: relative;
+    grid-column: 1/11;
+    grid-row: 2/3;
+}
+/* Dinh dang position cho tat ca <li> trong menu*/
+#menu li{
+    position: relative;
+    list-style: none;
+}
+/* Dinh dang thuoc tinh cho the <li> trong menu cap 1*/
+#menu ul.root > li{
+    list-style: none;
+    float: left;
+    position: relative;    
+}
+
+/* Dinh dang thuoc tinh <a> menu cap 1*/
+#menu ul.root > li >a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 0px 15px 0px 15px;
+    line-height: 50px;
+    display: block;    
+}
+
+/*Dinh dang thuoc tinh <ul> trong menu cap 2 va 3*/
+#menu ul.submenu{
+    max-width: auto;
+    background-color: #2ba2e2;
+    display: none;/*Tất cả menu cấp 2 và 3 sẽ không hiển thị */
+    position:absolute;
+}
+/*Khi Hover menu cấp 1 menu cấp 2 sẽ xuất hiện, khi hover menu cấp 2 thì menu cấp 3 xuất hiện*/
+#menu li:hover>ul.submenu{
+	display: block;
+}
+/*Dinh dang thuoc tinh cho <a> trong menu cap 2 và 3*/
+#menu ul.submenu li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    border: 1px solid #ccc;
+    line-height: 40px;
+    text-indent: 10px;
+    padding-right: 10px;
+
+}
+/*Dinh dạng vị trí xuất hiện của menu cấp 3*/
+#menu ul.submenu ul.submenu{
+    left:100%;
+    top:-1%;
+    
+}
+
+/* Hover menu cap 1 */
+#menu ul.root li:hover:not(.notmenu){
+    background-color: #2bb5e3;
+}
+
+/* Hover menu cap 1 */
+#menu ul.root>li>a:hover{
+    color: yellow;
+    
+}
+/*Hover menu cấp 2 và 3*/
+#menu ul.submenu li a:hover{
+    color: orange;
+}
+
+/*Dinh thanh thanh tim kiem trong menu*/
+#menu ul.root > li >form{
+    display: block;
+    transition: 0.5s;
+    font-size: 15px;
+    padding-left: 45px;
+}
+#menu li.call{
+    line-height: 50px;
+    font-size: 20px;
+    color: white;
+}
+#menu li.call span{
+    color: red;
+    font-weight: bold;
+}
+
+#slide{
+    grid-column: 1/11;
+    grid-row: 3/4;
+    margin-top: 15px;
+}
+#slide img{
+    max-width: 100%;
+    height: 400px;
+}
+#slide .slide-dots{
+    position: absolute;
+    top: 65%;
+    left: 48%;
+}
+#slide .slide-dots i{
+    color: white;
+}
+
+#slide .dieuhuong i:first-child{
+    position: absolute;
+    top: 42%;
+    left: 200px;
+    color: white;
+    font-size: 40px;
+}
+
+#slide .dieuhuong i:last-child{
+    position: absolute;
+    top: 42%;
+    right: 200px;
+    color: white;
+    font-size: 40px;
+}
+#slide .dieuhuong i:active{
+    color: #2bb5e3;
+}
+
+.title_noidung{
+    width: 100%;
+    border-bottom: 3px solid #0066b3;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    grid-column: 1/11;
+}
+.title_noidung a{
+    color: white;
+    font-weight: 900;
+    max-width: auto;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #0066b3;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 0px;
+    text-decoration: none;
+}
+
+.khungsanpham_home{
+    display: grid;
+    grid-column: 1/11;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.khungsanpham_home .hinh{
+    max-width: 100%;
+}
+.khungsanpham_home .hinh:hover{
+    transform: scale(1.1);
+}
+
+.khungsanpham_home .sanpham{
+    padding-bottom: 8px;
+}
+
+.khungsanpham_home .sanpham a{
+    text-decoration: none;    
+}
+.khungsanpham_home .sanpham p#tensp{
+    width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 20px;
+    -webkit-line-clamp: 2;
+    height: 40px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.khungsanpham_home .sanpham #tensp{
+    color: black;
+    padding-top: 4px;
+}
+.khungsanpham_home .sanpham #gia{
+    color: #0066b3;
+    font-weight: bold;
+    padding-right: 100px;
+    padding-top: 5px;
+}
+.khungsanpham_home .sanpham #giamgia{
+    text-decoration: line-through;
+    color: gray;
+    padding-right: 5px;
+}
+.khungsanpham_home .sanpham #giamgia-phantram{
+    color: #2d5ae0;
+}
+.khungsanpham_home .sanpham #free-ship{
+    max-width: 16px;
+}
+.khungsanpham_home .xemthem{
+    color: red;
+    grid-column: 5/6;
+    grid-row: 3/4;
+}
+.khungsanpham_home .xemthem a{
+    text-decoration: none;
+    color: #2594de;
+    font-weight: bold;
+}
+
+.footer{
+    grid-column: 1/11;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: #e9edf2;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-left: 80px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    font-size: 14px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footer .trai{
+    grid-column: 1/5;
+}
+.footer .phai{
+    grid-column: 6/11;
+}
+.footer .phai span{
+    font-weight: bold;
+}
+
+.title_laptop{
+    width: 100%;
+    grid-column: 1/11;
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 12px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+.title_laptop a{
+    text-decoration: none;
+    color:#4894d2;
+}
+
+.noidung{
+    grid-column: 2/10;
+    width: 100%;
+    text-align: left;
+}
+.noidungtrong{
+    width: 100%;
+    border-bottom: 1px solid darkgray;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-bottom: 30px;
+}
+.imgthanhtoan{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+.tieudethanhtoan{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.dinhdangnoidung{
+    font-size: 20px;
+    margin-top: 5px;
+}
